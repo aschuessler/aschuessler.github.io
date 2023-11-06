@@ -28,5 +28,10 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: 
+    color: black; /* Set initial link color to black */
+    text-decoration: none; /* Remove underline on links if desired */
+    transition: color 0.3s; /* Smooth transition effect for color change */
+}
+.nav-links ul li a:hover{
+    color: pink; /* Change text color to pink on hover */
 }
