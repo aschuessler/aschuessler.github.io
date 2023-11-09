@@ -53,15 +53,16 @@ nav img{
 }
 
 .about-text{
+  margin-bottom: 20px;
     width: 90%;
     color: black;
     position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     text-align: center;
 }
-.about-text h1{
+.about-text p{
     text-align: center;
     font-size: 16px;
 }
