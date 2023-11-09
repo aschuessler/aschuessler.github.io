@@ -42,7 +42,7 @@ nav img{
     color: #FF00B8; /* Change text color to pink on hover */
 }
 
-.text-box{
+.header-text{
     width: 90%;
     color: black;
     position: absolute;
@@ -51,16 +51,16 @@ nav img{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.text-box h1{
+.header-text h1{
     text-align: center;
     font-size: 48px;
 }
 
 .about-text{
-  margin-bottom: 20px;
-    width: 90%;
+    margin-bottom: 20px;
+    /*width: 90%;
     color: black;
-    position: absolute;
+    position: absolute;*/
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
