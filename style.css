@@ -8,7 +8,11 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    position: relative;
+
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+    z-index: 1000;
 }
 nav{
     display: flex;
