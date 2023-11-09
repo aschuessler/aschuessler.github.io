@@ -42,7 +42,7 @@ nav img{
     color: #FF00B8; /* Change text color to pink on hover */
 }
 
-.header-text{
+.intro-text{
     width: 90%;
     color: black;
     position: absolute;
@@ -51,7 +51,7 @@ nav img{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.header-text h1{
+.intro-text h1{
     text-align: center;
     font-size: 48px;
 }
