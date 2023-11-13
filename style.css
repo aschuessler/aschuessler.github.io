@@ -1,16 +1,15 @@
-*{
+body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.header{
-    min-height: 100vh;
+
+.fixed-header{
+    position: fixed;
+    top: 0;
     width: 100%;
     background-position: center;
     background-size: cover;
-
-    position: fixed;
-    top: 0;
     background-color: #FFFFFF;
     z-index: 1000;
 }
@@ -42,14 +41,19 @@ nav img{
     color: #FF00B8; /* Change text color to pink on hover */
 }
 
+section{
+    height: 100vh; /* full viewpoint height */
+    padding: 20px; /* add padding */
+}
+
 .intro-text{
     width: 90%;
     color: black;
-    position: absolute;
+    text-align: center;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 .intro-text h1{
     text-align: center;
@@ -57,22 +61,57 @@ nav img{
 }
 
 .about-text{
-    margin-bottom: 20px;
-    /*width: 90%;
+    width: 90%;
     color: black;
-    position: absolute;*/
-    /* top: 50%;
+    position: relative;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     text-align: center;
 }
-.about-text p{
+.about-text h1{
     text-align: center;
-    font-size: 16px;
+    font-size: 48px;
 }
 
-@media(max-width: 700px){
-    .text-box h1{
-    font-size: 16px;
-    }
+.projects-text{
+    width: 90%;
+    color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+.projects-text h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+.publications-text{
+    width: 90%;
+    color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.publications-text h1{
+    text-align: center;
+    font-size: 48px;
+}
+
+.contact-text{
+    width: 90%;
+    color: black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.contact-text h1{
+    text-align: center;
+    font-size: 48px;
+}*/
