@@ -58,7 +58,7 @@ section{
 }
 .intro-text h1{
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .about-text{
@@ -71,8 +71,8 @@ section{
     text-align: center;
 }
 .about-text h1{
-    text-align: center;
-    font-size: 48px;
+    text-align: left;
+    font-size: 24px;
 }
 
 .projects-text{
@@ -86,7 +86,7 @@ section{
 }
 .projects-text h1{
     text-align: center;
-    font-size: 48px;
+    font-size: 32px;
 }
 
 .publications-text{
@@ -100,7 +100,7 @@ section{
 }
 .publications-text h1{
     text-align: center;
-    font-size: 48px;
+    font-size: 32px;
 }
 
 .contact-text{
@@ -114,7 +114,7 @@ section{
 }
 .contact-text h1{
     text-align: center;
-    font-size: 48px;
+    font-size: 32px;
 }
 .contact-text a{
     text-align: center;
@@ -133,3 +133,9 @@ section{
 .contact-text img{
     height: 32px;
 }
+
+/*@media(max-width: 768px){
+    .nav-links{
+    display: none;
+}
+}*/
