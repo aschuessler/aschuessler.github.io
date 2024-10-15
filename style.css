@@ -56,10 +56,6 @@ section{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.intro-text iframe{
-    width: 5000
-
-}
 
 .intro-text h1{
     text-align: center;
