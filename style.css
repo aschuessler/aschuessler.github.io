@@ -5,8 +5,7 @@ body{
 }
 
 .fixed-header{
-    position: fixed;
-    top: 0;
+    position: static;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -15,12 +14,12 @@ body{
 }
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 1% 6%;
     justify-content: space-between;
     align-items: center;
 }
 nav img{
-    height: 80px;
+    height: 60px;
 }
 .nav-links{
     flex: 1;
@@ -32,19 +31,16 @@ nav img{
     padding: 8px 12 px;
     position: relative;
     margin-right: 16px;
+
 }
 .nav-links ul li a{
     color: black; /* Set initial link color to black */
     text-decoration: none; /* Remove underline on links if desired */
     transition: color 0.3s; /* Smooth transition effect for color change */
+    font-size: 16px;
 }
 .nav-links ul li a:hover{
     color: #FF00B8; /* Change text color to pink on hover */
-}
-
-section{
-    height: 100vh; /* full viewpoint height */
-    padding: 20px; /* add padding */
 }
 
 .intro-text{
@@ -62,18 +58,68 @@ section{
     font-size: 40px;
 }
 
-.about-text{
-    width: 90%;
-    color: black;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.about-container {
+    padding: 20px 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
-.about-text h1{
-    text-align: left;
+
+.about-headline {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    margin-top: 0;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-image {
+    flex: 0 0 300px; /* Increased width for the image */
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    /* Removed border-radius */
+}
+
+.about-text {
+    flex: 1; /* Takes up remaining space */
+    padding-top: 0; /* Align text to the top */
+}
+
+.about-text h2 {
+    font-size: 24px; /* Smaller font size for sub-headline */
+    color: black;
+    margin-bottom: 10px; /* Add spacing below sub-headline */
+    margin-top: 0;
+}
+
+.about-text p {
+    font-size: 18px; /* Regular font size for text */
+    font-weight: 400; /* Regular font weight */
+    line-height: 1.6;
+    color: black;
+    margin: 0; /* Remove default margins */
+    margin-bottom: 10px;
+}
+
+.about-interests {
+    text-align: center;
+    margin-top: 20px; /* Space above the section */
+    padding-top: 40px;
+    }
+
+.about-interests h3 {
     font-size: 24px;
+    color: black;
+    margin: 0;
 }
 
 .projects-text{
@@ -102,6 +148,13 @@ section{
 .publications-text h1{
     text-align: center;
     font-size: 32px;
+}
+
+#contact {
+    padding-top: 120px; /* Adjust this value to match your other pages */
+    padding-left: 40px;
+    padding-right: 40px;
+    height: auto;
 }
 
 .contact-text{
@@ -135,8 +188,299 @@ section{
     height: 32px;
 }
 
-/*@media(max-width: 768px){
-    .nav-links{
-    display: none;
+.publications-container {
+    padding: 20px 40px; /* Optional: Add some padding for better spacing */
 }
-}*/
+
+.publications-list ul li,
+.exhibitions-list ul li {
+    margin-bottom: 0.8em; /* Adds space between list items */
+    line-height: 1.6; /* Improves readability */
+}
+
+.publications-headline {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    margin-top: 0;
+}
+
+.projects-container {
+    padding: 20px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.project-square {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+    transition: all 0.3s;
+    display: block;
+}
+
+.project-img-default {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.project-img-hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-square:hover .project-img-default {
+    opacity: 0;
+}
+
+.project-square:hover .project-img-hover {
+    opacity: 1;
+}
+
+.projects-headline {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    margin-top: 0;
+}
+
+.social-link {
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    margin-right: 16px;
+}
+
+.social-img-default {
+    height: 32px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.social-img-hover {
+    height: 32px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.social-link:hover .social-img-default {
+    opacity: 0;
+}
+
+.social-link:hover .social-img-hover {
+    opacity: 1;
+}
+
+.logo-link {
+    position: relative;
+    display: inline-block;
+    height: 45px;
+}
+
+.logo-default {
+    height: 45px;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.logo-hover {
+    height: 45px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo-link:hover .logo-default {
+    opacity: 0;
+}
+
+.logo-link:hover .logo-hover {
+    opacity: 1;
+}
+
+#introduction {
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: auto;
+}
+
+.slideshow-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.slideshow-container {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.slides-track {
+    display: flex;
+    height: 100%;
+    position: relative;
+    /* The transition is now handled by JS */
+
+    /* --- ADD THESE LINES --- */
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased; /* Optional: for smoother text on some screens */
+}
+
+.slide {
+    width: 80%; /* The visible width of the centered slide */
+    max-width: 800px;
+    height: 100%;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    margin-right: -4px; /* Add this line to create a 1px overlap */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px; /* Increased padding to make the box bigger */
+    color: black;
+    font-weight: bold;
+    font-size: 24px; /* Increased font size for a bigger arrow */
+    background-color: rgba(255,255,255,0.3);
+    user-select: none;
+    z-index: 10;
+    border-radius: 5px; /* Optional: slightly more rounded corners */
+}
+
+.prev { left: 20px; } /* Moved in from the edge */
+.next { right: 20px; } /* Moved in from the edge */
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(255,255,255,0.6);
+}
+
+.scholar-link {
+    text-align: center;
+    margin: 40px 0; /* Space above and below */
+}
+
+.scholar-link p {
+    font-size: 16px;
+    color: black;
+    margin: 0; /* Remove default paragraph margins */
+}
+
+.scholar-link a {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.scholar-default {
+    transition: opacity 0.3s;
+}
+
+.scholar-hover {
+    height: 24px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.scholar-link a:hover .scholar-default {
+    opacity: 0;
+}
+
+.scholar-link a:hover .scholar-hover {
+    opacity: 1;
+}
+
+.scholar-link img {
+    height: 24px; /* Adjust size as needed */
+    width: auto;
+}
+
+#intro-about {
+    padding: 40px 40px;
+    background-color: #FFFFFF;
+}
+
+.intro-about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-about-headline {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+}
+
+.intro-about-content {
+    display: flex;
+    width: 100%;
+}
+
+.intro-about-text {
+    width: 50%; /* Left half of the page */
+    padding-right: 40px;
+}
+
+.intro-about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.intro-about-text a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 700;
+}
+
+.intro-about-text a:hover {
+    color: #FF00B8;
+}
+
+

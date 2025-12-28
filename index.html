@@ -1,65 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Alexander Schuessler</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
+    <title>Alexander Schuessler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header class="fixed-header">
-		<nav>
-			<a href="https://aschuessler.github.io"><img src="images/website_logo.png"></a>
-			<div class="nav-links">
-				<ul>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#publications">Publications</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-	<main>
-		<section id="introduction">
-			<div class="intro-text">
-				<h1>Transparent interfaces for physical human-robot interaction</h1>
-			</div>
-		</section>
-		<section id="projects">
-			<div class="projects-text">
-				<h1>Currently working on projects...</h1>
-			</div>
-		</section>
-		<section id="publications">
-			<div class="publications-text">
-				<h1>More publications soon...</h1>
-			</div>
-		</section>
-		<section id="about">
-			<div class="about-text">
-				<h1>Alexander Schüßler is a PhD candidate and researcher at the Reconfigurable Robotics Lab, EPFL.
-					His work intersects soft materials and embedded machine learning for transparent robotic interfaces. 
-					His translational efforts focus on robots for affordable healthcare.
-				</h1>
-			</div>
-		</section>
-		<section id="contact">
-			<div class="contact-text">
-				<h1>Feel free to contact me.</h1>
-				<a href="mailto:alexander.schuessler@epfl.ch">alexander.schuessler@epfl.ch</a>
-				<ul>
-					<a href="https://github.com/aschuessler"><img src="images/github.svg"></a>
-					<a href="https://www.linkedin.com/in/alexanderschuessler/"><img src="images/linkedin.svg"></a>
-					<a href="https://scholar.google.com/citations?user=TvYvnWAAAAAJ&hl"><img src="images/googlescholar.svg"></a>
-				</ul>
+    <header class="fixed-header">
+        <nav>
+            <a href="index.html" class="logo-link">
+                <img src="images/AS_logo.svg" alt="Logo" class="logo-default">
+                <img src="images/AS_logo_magenta.svg" alt="Logo Hover" class="logo-hover">
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="publications.html">Publications / Exhibitions</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <div class="slideshow-wrapper">
+                <div class="slideshow-container">
+                    <div class="slides-track">
+                        <!-- Clone of the last slide -->
+                        <div class="slide">
+                            <img src="images/project_2_origami_modelling_image_1.svg" alt="Slide 6">
+                        </div>
 
-			</div>
-		</section>
-	</main>
+                        <!-- Real slides -->
+                        <div class="slide">
+                            <img src="images/project_1_robot_surgery_image_1.svg" alt="Slide 1">
+                        </div>
+                        <div class="slide">
+                            <img src="images/project_2_origami_modelling_image_1.svg" alt="Slide 2">
+                        </div>
+						<div class="slide">
+                            <img src="images/project_1_robot_surgery_image_1.svg" alt="Slide 3">
+                        </div>
+                        <div class="slide">
+                            <img src="images/project_2_origami_modelling_image_1.svg" alt="Slide 4">
+                        </div>
+						<div class="slide">
+                            <img src="images/project_1_robot_surgery_image_1.svg" alt="Slide 5">
+                        </div>
+                        <div class="slide">
+                            <img src="images/project_2_origami_modelling_image_1.svg" alt="Slide 6">
+                        </div>
 
-	<script src="script.js"></script>
+                        <!-- Clone of the first slide -->
+                        <div class="slide">
+                            <img src="images/project_1_robot_surgery_image_1.svg" alt="Slide 1">
+                        </div>
+                    </div>
+                </div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            </div>
+        </section>
+        <section id="intro-about">
+            <div class="intro-about-container">
+                <h2 class="intro-about-headline">Alexander Schüßler</h2>
+                <div class="intro-about-content">
+                    <div class="intro-about-text">
+                        <p>I am a PhD candidate and researcher at the Reconfigurable Robotics Lab, EPFL. My research focuses on reconfigurable morphology and intelligence in robots for adaptable human augmentation.
+                            My vision is to realize human-centered robots that seamlessly integrate with humans and their environments to improve human capabilities and support human flourishing.</p>
+                        <p><a href="projects.html">Learn more about my projects →</a></p>
+                        <p><a href="contact.html">Get in touch with me →</a></p>
+                    </div>
+                </div>
+                    
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
